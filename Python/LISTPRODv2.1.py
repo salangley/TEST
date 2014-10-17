@@ -9,53 +9,7 @@
 #-------------------------------------------------------------------------------
 
 #IMPORT MODULES
-import arcpy
-import datetime
-import ftplib
-import logging
-import os
-import re
-import shutil
-import smtplib
-import string
-import subprocess
-import sys
-import time
-import gzip
-import platform
-import sysconfig
-import getpass
-import zipfile
-import zlib
-import glob
-import arcpy
-import datetime
-import ftplib
-import logging
-import os
-import re
-import shutil
-import smtplib
-import string
-import subprocess
-import sys
-import time
-import gzip
-import platform
-import sysconfig
-import getpass
-import zipfile
-import zlib
-import glob
-import arcgisscripting
-import gc
-import ast
-
-from email.MIMEText import MIMEText
-from types import *
-
-from email.MIMEText import MIMEText
-from types import *
+#No Importsssssssssssssssssssssssssss
 
 ################################################################################
 #GETS TODAYS DATE
@@ -123,29 +77,7 @@ def sendEmail(emailbody,
     Notes:
     """
 
-    try:
-        strFrom = 'Samuel.Langley@dpipwe.tas.gov.au'
-        strTo = ''.join(emailTo) # Convert list of email recipents to String
 
-        # Create a text/plain message
-        msgRoot = MIMEText(emailbody)
-        msgRoot['Subject'] = subject
-        msgRoot['From'] = strFrom
-        msgRoot['To'] = strTo
-
-errDesc:
-        print("SMTPConnectError : ", errDesc)
-        logging.critial("SMTPConnectError : " + errDesc)
-    except smtplib.SMTPException, errDesc:
-        print("SMTPException : ", errDesc)
-        logging.critical("SMTPException : " + errDesc)
-    except:
-        print "Exception Error in emailSender : ", sys.exc_info()[0]
-        print sys.exc_info()[1]
-        print sys.exc_info()[2]
-        logging.critical("Exception Error in emailSender : " + sys.exc_info()[0])
-        logging.critical(sys.exc_info()[1])
-        logging.critical(sys.exc_info()[2])
 
 ################################################################################
 #DETERMINES THE LOGFILE BASED UPON THE USERNAME AND OPERATING SYSTEM EG WINDOWS
@@ -258,8 +190,7 @@ def FILTERDATASETS(filterstring,databaseconnection):
                 filterstring_temp=filterstring.replace(asterixsearch,"")
 
                 #Determing if the feature datasets name contains the filter string
-                if fd.find(filterstring_temp) != -1:
-                    FeatureDatasets.append(fd)
+                #THE WHITLEMS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
             #Looping through all Tables

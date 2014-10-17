@@ -34,15 +34,7 @@ import zipfile
 import zlib
 import glob
 import csv
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-#################################################################################################################################################
+
 def SpatialIndexChecker(g,n,dataset,data,data2):
 
     #Defining variables
@@ -231,38 +223,7 @@ if processworks==1:
             #Terminating the code execution
             processworks=0
 
-        if processworks==1:
-            #writing to csv output file1 that outlines all the feature classes that need to have their spatial indexes updated
-            #testing to see if csv output file 1 path is valid
-            try:
-                with open(csvoutput1, 'w') as fp:
-
-                    #Defining the line counter
-                    g=0
-
-                    #Number of lines in text file
-                    n=len(dataset)
-
-            #Return message if the csv output file 1 path is not valid and terminate execution
-            except Exception, e:
-                print "Path for csv output file 1 is not valid please try again"
-
-                #Terminating the code execution
-                processworks=0
-
-            #If file path is valid then...
-            if processworks==1:
-
-                #writing to csv output file 1 that outlines all the feature classes that need to have their spatial indexes updated
-                with open(csvoutput1, 'w') as fp:
-
-                    #Defining the line counter
-                    g=0
-
-                    #Number of lines in text file
-                    n=len(dataset)
-
-                    #This represents the loop through the input csv file
+put csv file
                     while g<n:
 
                         #Defining the column delimiter and line terminator
@@ -325,4 +286,5 @@ if processworks==1:
 
 
 ########################################################################################################################################################################################
+#SAM CAN PROGRAM LIKE A PRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

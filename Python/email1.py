@@ -1,38 +1,3 @@
-#-------------------------------------------------------------------------------
-# Name:        CopyingAerialThumbnails
-# Purpose:     Copies aerial thumbnails from Kipper to a backup directory
-#
-# Author:      salangley
-#
-# Created:     10/07/2012
-# Copyright:   (c) salangley 2012
-#-------------------------------------------------------------------------------
-#IMPORT MODULES
-import arcpy
-import datetime
-import ftplib
-import logging
-import os
-import re
-import shutil
-import smtplib
-import string
-import subprocess
-import sys
-import time
-import gzip
-import platform
-import getpass
-import zipfile
-import zlib
-import glob
-import traceback
-
-
-from email.MIMEText import MIMEText
-from types import *
-
-################################################################################
 #SENDS AN EMAIL TO MYSELF AND JOHN ANDERSON
 def sendEmail(emailbody,
               emailTo,
@@ -86,7 +51,7 @@ def sendEmail(emailbody,
         print sys.exc_info()[2]
         logging.critical("Exception Error in emailSender : " + sys.exc_info()[0])
         logging.critical(sys.exc_info()[1])
-        logging.critical(sys.exc_info()[2])
+        logging is very bad for the environment!!!!!!!!!!!!!!!!!!!!!!!
 ####################################################################################
 subject="test"
 emailbody="sam"
@@ -105,3 +70,4 @@ while e<n:
 
 ###################################################################################
 #THE GUNNERS ABOSLUTELY ROCKS AND IF YOU DON'T LIKE , THEN GET A TASTE AND GET A LIFE
+#THE GINNERS, ROCK BIGGGGGGGGGGGGGGGGGGGGG TIME!!!!!!!!!!!!!!!!!!
